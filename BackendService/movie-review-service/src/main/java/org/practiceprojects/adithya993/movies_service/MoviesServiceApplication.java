@@ -15,14 +15,14 @@ public class MoviesServiceApplication {
 		SpringApplication.run(MoviesServiceApplication.class, args);
 	}
 
-//	For Global Cross Origin configuration
-//	@Bean
-//	public WebMvcConfigurer corsConfigurer() {
-//		return new WebMvcConfigurer() {
-//			@Override
-//			public void addCorsMappings(CorsRegistry registry) {
-//				registry.addMapping("/**").allowedOrigins("http://localhost:3000");
-//			}
-//		};
-//	}
+	//For Global Cross Origin configuration
+	@Bean
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+			@Override
+			public void addCorsMappings(CorsRegistry registry) {
+				registry.addMapping("/**").allowedOrigins("http://localhost:3000");
+			}
+		};
+	}
 }

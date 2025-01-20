@@ -12,7 +12,6 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api/v1/reviews")
 public class ReviewController {
     @Autowired
