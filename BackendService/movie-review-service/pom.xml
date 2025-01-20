@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.practiceprojects.adithya993</groupId>
-	<artifactId>movies-service</artifactId>
+	<artifactId>movie-review-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>movies-service</name>
 	<description>APIs service related to Movie Review</description>
