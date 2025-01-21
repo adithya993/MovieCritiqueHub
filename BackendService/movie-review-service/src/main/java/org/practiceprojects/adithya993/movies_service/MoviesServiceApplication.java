@@ -18,10 +18,16 @@ public class MoviesServiceApplication {
 	//For Global Cross Origin configuration
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
+//		return new WebMvcConfigurer() {
+//			@Override
+//			public void addCorsMappings(CorsRegistry registry) {
+//				registry.addMapping("/**").allowedOrigins("http://localhost:3000");
+//			}
+//		};
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://localhost:3000");
+				registry.addMapping("/**").allowedOrigins("https://moviecritiquehub-client.onrender.com");
 			}
 		};
 	}
